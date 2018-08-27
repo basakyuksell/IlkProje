@@ -21,7 +21,7 @@ public class EmployeeController {
         return employeeService.findAll();
     }
 
-    @RequestMapping(value={"/personEdit","/personEdit/{id}"}, method = RequestMethod.GET)
+  /*  @RequestMapping(value={"/personEdit","/personEdit/{id}"}, method = RequestMethod.GET)
     public String personEditForm(Employee employee, @PathVariable(required = false, name = "id") Long id) {
         if (null!=id) {
             employee.addAttribute("employee", employeeService.findOne(id));
@@ -43,7 +43,7 @@ public class EmployeeController {
         employee.addAttribute("employeeList", employeeService.findAll());
         return "employeeList";
     }
-
+*/
 
     /*
     @Autowired
